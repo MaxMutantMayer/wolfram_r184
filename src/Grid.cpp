@@ -3,7 +3,7 @@
 #include <random>
 
 #include "OutputColorizer.hpp"
-#include "TransitionLookUpTable.hpp"
+#include "TransitionLookupTable.hpp"
 
 static std::random_device rd;
 static std::mt19937_64 engine(rd());
