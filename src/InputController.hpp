@@ -1,6 +1,8 @@
 #ifndef WOLFRAMR184_INPUTCONTROLLER_H
 #define WOLFRAMR184_INPUTCONTROLLER_H
 
+#include <stdlib.h>
+
 namespace wolfram_r184
 {
 namespace input_controller
