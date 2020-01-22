@@ -11,12 +11,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(HEADER_FILES
 	src/CellularAutomaton.hpp
 	src/Grid.hpp
+	src/InputController.hpp
 	src/TransitionLookupTable.hpp
 )
 
 set(SOURCE_FILES
 	src/CellularAutomaton.cpp
 	src/Grid.cpp
+	src/InputController.cpp
 	src/main.cpp
 )
 

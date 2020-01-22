@@ -5,14 +5,14 @@
 #include "OutputColorizer.hpp"
 #include "TransitionLookupTable.hpp"
 
+namespace wolfram_r184
+{
+
 static std::random_device rd;
 static std::mt19937_64 engine(rd());
 static std::uniform_int_distribution<> distribution(0, 1);
 
-namespace wolfram_r184
-{
-
-Grid::Grid()
+Grid::Grid(void)
 	: m_currentGrid(0)
 {
 	Init();
@@ -43,7 +43,8 @@ void Grid::DoTransition(void)
 		}
 
 		// Receive new value from lookup table and write to back buffered grid
-		m_grid[!m_currentGrid][i] = TransitionLookupTable::TABLE.at(cellState);
+		m_grid[!m_currentGrid][i] =
+			transition_lookup_table::TABLE.at(cellState);
 	}
 
 	// Additionally add random state to empty cells at position zero

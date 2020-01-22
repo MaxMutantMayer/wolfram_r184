@@ -11,7 +11,7 @@ const size_t GRID_SIZE = 30;
 class Grid
 {
 public:
-	Grid();
+	Grid(void);
 
 	/*
 	 * Performs single transition of all cells

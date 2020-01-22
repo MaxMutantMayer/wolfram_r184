@@ -9,7 +9,7 @@ namespace wolfram_r184
 class CellularAutomaton
 {
 public:
-	CellularAutomaton() = default;
+	CellularAutomaton(void) = default;
 
     /*
      * Perform N transitions on grid
